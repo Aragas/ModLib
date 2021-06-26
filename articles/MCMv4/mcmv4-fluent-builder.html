@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Overview | MCM Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Overview | MCM Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/collapse-container.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                  </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="overview">Overview</h2>
+
+<p>Fluent Builder gives the ability to create Settings at runtime.<br>
+This can be useful for mod specific sections that should not be displayed if the mod is not loaded.</p>
+<p><strong>MCM</strong> provides the builder interface <a class="xref" href="../../api/MCM.Abstractions.FluentBuilder.ISettingsBuilder.html">ISettingsBuilder</a> and a default implementation @&quot;MCM.Abstractions.FluentBuilder.Implementation.DefaultSettingsBuilder?text=DefaultSettingsBuilder&quot;.</p>
+<p>Any property is set by a <code>Set%PropertyName%</code> method.</p>
+<p><code>CreateGroup</code> creates a property group where you can define your properties. The default Group name is 'Misc'. Use teh action delegate to configure the property group.</p>
+<p><code>AddBool</code> creates a Bool property.<br>
+<code>AddInteger</code> creates an Integer Slider property.<br>
+<code>AddFloatingInteger</code> creates an Float Slider property.<br>
+<code>AddText</code> creates an Textbox property.<br>
+<code>AddDropdown</code> creates a Dropdown property.<br>
+<code>AddCustom</code> can add a custom property. The custom property should implement one of the interfaces defined in <a class="xref" href="../../api/MCM.Abstractions.Settings.Definitions.html">MCM.Abstractions.Settings.Definitions</a> namespace. Currently there is no way of defining a custom UI Control. One of the possible fixes would be to use UIExtender library.</p>
+<p><code>CreatePreset</code> creates a new Preset.<br>
+<code>SetPropertyValue</code> sets an existing property value.</p>
+<p><code>BuildAsGlobal</code> returns a Global setting instance. Use <code>Register</code> and <code>Unregister</code> for MCM to use it.<br>
+<code>BuildAsPerCharacter</code> returns a PerCharacter setting  instance. Use <code>Register</code> and <code>Unregister</code> for MCM to use it. The registered settings will be cleared before and after player joins the campaign, so do the register thing when the campaign was already joined in.</p>
+<h2 id="example">Example</h2>
+<ul>
+<li><a href="https://github.com/Aragas/TrainingTweak/blob/fba9bb60cdbd5ff61418f4cea30c625b01cd71de/TroopTraining/Settings.cs">TrainingTweak</a> - mimics the standard MCM Global Settings flow.</li>
+</ul>
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/docs/articles/MCMv4/mcmv4-fluent-builder.md/#L1" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © 2020 Aragas
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

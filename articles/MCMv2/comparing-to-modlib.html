@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Modularity | MCM Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Modularity | MCM Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/collapse-container.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                  </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="modularity">Modularity</h2>
+
+<p>One of the main features of <code>Bannerlord.MBOptionScreen</code> is modularity or 'versioning'.<br>
+Every component was abstracted, so that they could be easily replaced if the game updates.</p>
+<h4 id="what-does-it-mean-for-modders">What does it mean for modders?</h4>
+<p>It doesn't matter that you haven't updated <code>Bannerlord.MBOptionScreen</code> to the latest version. As long as any loaded Module in the game uses a newer version of it, the implementations inside it will be used globally.<br>
+Each new implementation of a component will be written with backwards compatibility, so if some really old mod was installed together with a fresh one, <code>Bannerlord.MBOptionScreen</code> will not break and will provide options for both mods.</p>
+<h4 id="what-does-it-mean-for-users">What does it mean for users?</h4>
+<p>If some mod was broken because of an old version of <code>Bannerlord.MBOptionScreen</code>, installing a newer version of it as a standalone module will fix it without the need of replacing anything in the original mod.</p>
+<h2 id="idempotency">Idempotency</h2>
+<p><code>Bannerlord.MBOptionScreen</code> ensures that it will be initialized only once, no matter how much modules reference it or includes it within them. And only the latest implementations that are compatible with the game version will be used.</p>
+<h2 id="easy-to-use">Easy to use</h2>
+<ul>
+<li><code>Bannerlord.MBOptionScreen</code> does not require anything from the modder except of the implementation of a <code>SettingsBase</code> class.<br>
+It will discover every implementation of a <code>SettingsBase</code> itself, via reflection and initiate it.</li>
+<li>You also don't need to include any additional .xml files like brushes and prefabs. They are embed into the assembly and will inject themselves into the game during the initialization phase.</li>
+</ul>
+<h2 id="in-game-option">In-game option</h2>
+<p>The mod add an entry to the in-game escape menu to access the <code>Mod Options</code> menu inside the campaign!</p>
+<h2 id="backwards-compatibility">Backwards-compatibility</h2>
+<p><code>Bannerlord.MBOptionScreen</code> supports settings from <code>ModLib</code>.<br>
+By default, the original <code>ModLib</code> menu option is replaced with <code>Bannerlord.MBOptionScreen</code>. This can be disabled in options.<br>
+It also provides a stub ModLib.dll file to make <code>Bannerlord.MBOptionScreen</code> work even if <code>ModLib</code> is not present.</p>
+<h2 id="localization">Localization</h2>
+<p>Supports TW's way of localizing text.</p>
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/docs/articles/MCMv2/comparing-to-modlib.md/#L1" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © 2020 Aragas
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,867 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FluentPerSaveSettings
+   | MCM Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FluentPerSaveSettings
+   | MCM Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/collapse-container.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                  </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings">
+  <h1 id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings">Class FluentPerSaveSettings
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="MCM.Abstractions.Settings.Base.BaseSettings.html">BaseSettings</a></div>
+    <div class="level2"><a class="xref" href="MCM.Abstractions.Settings.Base.PerSave.PerSaveSettings.html">PerSaveSettings</a></div>
+    <div class="level3"><span class="xref">FluentPerSaveSettings</span></div>
+  </div>
+  
+      <div class="level4"><a class="xref" href="MCM.Abstractions.Settings.Base.PerSave.ExternalPerSaveSettings.html">ExternalPerSaveSettings</a></div>
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="MCM.Abstractions.Settings.Base.PerSave.PerSaveSettings.html#MCM_Abstractions_Settings_Base_PerSave_PerSaveSettings_Cache">PerSaveSettings.Cache</a>
+    </div>
+    <div>
+      <a class="xref" href="MCM.Abstractions.Settings.Base.PerSave.PerSaveSettings.html#MCM_Abstractions_Settings_Base_PerSave_PerSaveSettings_FormatType">PerSaveSettings.FormatType</a>
+    </div>
+    <div>
+      <a class="xref" href="MCM.Abstractions.Settings.Base.BaseSettings.html#MCM_Abstractions_Settings_Base_BaseSettings_SaveTriggered">BaseSettings.SaveTriggered</a>
+    </div>
+    <div>
+      <a class="xref" href="MCM.Abstractions.Settings.Base.BaseSettings.html#MCM_Abstractions_Settings_Base_BaseSettings_OnPropertyChanged_System_String_">BaseSettings.OnPropertyChanged(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="MCM.Abstractions.Settings.Base.BaseSettings.html#MCM_Abstractions_Settings_Base_BaseSettings_CopyAsNew">BaseSettings.CopyAsNew()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="MCM.Abstractions.Settings.Base.PerSave.html">MCM.Abstractions.Settings.Base.PerSave</a></h6>
+  <h6><strong>Assembly</strong>: MCMv4.dll</h6>
+  
+  <h5 id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FluentPerSaveSettings : PerSaveSettings, INotifyPropertyChanged, IFluentSettings</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings__ctor_System_String_System_String_System_String_System_String_System_Int32_System_Char_System_ComponentModel_PropertyChangedEventHandler_System_Collections_Generic_IEnumerable_MCM_Abstractions_Settings_Models_SettingsPropertyGroupDefinition__System_Collections_Generic_Dictionary_System_String_MCM_Abstractions_FluentBuilder_ISettingsPresetBuilder__.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.%23ctor(System.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.Int32%2CSystem.Char%2CSystem.ComponentModel.PropertyChangedEventHandler%2CSystem.Collections.Generic.IEnumerable%7BMCM.Abstractions.Settings.Models.SettingsPropertyGroupDefinition%7D%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CMCM.Abstractions.FluentBuilder.ISettingsPresetBuilder%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Base/PerSave/FluentPerSaveSettings.cs/#L39" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings__ctor_" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.#ctor*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings__ctor_System_String_System_String_System_String_System_String_System_Int32_System_Char_System_ComponentModel_PropertyChangedEventHandler_System_Collections_Generic_IEnumerable_MCM_Abstractions_Settings_Models_SettingsPropertyGroupDefinition__System_Collections_Generic_Dictionary_System_String_MCM_Abstractions_FluentBuilder_ISettingsPresetBuilder__" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.#ctor(System.String,System.String,System.String,System.String,System.Int32,System.Char,System.ComponentModel.PropertyChangedEventHandler,System.Collections.Generic.IEnumerable{MCM.Abstractions.Settings.Models.SettingsPropertyGroupDefinition},System.Collections.Generic.Dictionary{System.String,MCM.Abstractions.FluentBuilder.ISettingsPresetBuilder})"><a href="#collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings__ctor_System_String_System_String_System_String_System_String_System_Int32_System_Char_System_ComponentModel_PropertyChangedEventHandler_System_Collections_Generic_IEnumerable_MCM_Abstractions_Settings_Models_SettingsPropertyGroupDefinition__System_Collections_Generic_Dictionary_System_String_MCM_Abstractions_FluentBuilder_ISettingsPresetBuilder__" class="expander" data-toggle="collapse">FluentPerSaveSettings(String, String, String, String, Int32, Char, PropertyChangedEventHandler, IEnumerable&lt;SettingsPropertyGroupDefinition&gt;, Dictionary&lt;String, ISettingsPresetBuilder&gt;)</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings__ctor_System_String_System_String_System_String_System_String_System_Int32_System_Char_System_ComponentModel_PropertyChangedEventHandler_System_Collections_Generic_IEnumerable_MCM_Abstractions_Settings_Models_SettingsPropertyGroupDefinition__System_Collections_Generic_Dictionary_System_String_MCM_Abstractions_FluentBuilder_ISettingsPresetBuilder__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FluentPerSaveSettings(string id, string displayName, string folderName, string subFolder, int uiVersion, char subGroupDelimiter, PropertyChangedEventHandler onPropertyChanged, IEnumerable&lt;SettingsPropertyGroupDefinition&gt; settingPropertyGroups, Dictionary&lt;string, ISettingsPresetBuilder&gt; presets)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">id</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">displayName</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">folderName</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">subFolder</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">uiVersion</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.char">Char</a></span>
+        <span class="parametername">subGroupDelimiter</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventhandler">PropertyChangedEventHandler</a></span>
+        <span class="parametername">onPropertyChanged</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="MCM.Abstractions.Settings.Models.SettingsPropertyGroupDefinition.html">SettingsPropertyGroupDefinition</a>&gt;</span>
+        <span class="parametername">settingPropertyGroups</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="MCM.Abstractions.FluentBuilder.ISettingsPresetBuilder.html">ISettingsPresetBuilder</a>&gt;</span>
+        <span class="parametername">presets</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_DiscoveryType.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.DiscoveryType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Base/PerSave/FluentPerSaveSettings.cs/#L29" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_DiscoveryType_" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.DiscoveryType*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_DiscoveryType" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.DiscoveryType"><a href="#collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_DiscoveryType" class="expander" data-toggle="collapse">DiscoveryType</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_DiscoveryType" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string DiscoveryType { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MCM.Abstractions.Settings.Base.BaseSettings.html#MCM_Abstractions_Settings_Base_BaseSettings_DiscoveryType">BaseSettings.DiscoveryType</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_DisplayName.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.DisplayName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Base/PerSave/FluentPerSaveSettings.cs/#L23" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_DisplayName_" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.DisplayName*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_DisplayName" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.DisplayName"><a href="#collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_DisplayName" class="expander" data-toggle="collapse">DisplayName</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_DisplayName" class="collapse in">
+  <div class="markdown level1 summary"><p>The display name of the setting in the settings menu.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed override string DisplayName { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MCM.Abstractions.Settings.Base.BaseSettings.html#MCM_Abstractions_Settings_Base_BaseSettings_DisplayName">BaseSettings.DisplayName</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_FolderName.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.FolderName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Base/PerSave/FluentPerSaveSettings.cs/#L25" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_FolderName_" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.FolderName*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_FolderName" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.FolderName"><a href="#collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_FolderName" class="expander" data-toggle="collapse">FolderName</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_FolderName" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed override string FolderName { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MCM.Abstractions.Settings.Base.BaseSettings.html#MCM_Abstractions_Settings_Base_BaseSettings_FolderName">BaseSettings.FolderName</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_Id.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Base/PerSave/FluentPerSaveSettings.cs/#L21" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_Id_" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.Id*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_Id" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.Id"><a href="#collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_Id" class="expander" data-toggle="collapse">Id</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_Id" class="collapse in">
+  <div class="markdown level1 summary"><p>Unique identifier used to save to file. Make sure this is unique to your mod.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed override string Id { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MCM.Abstractions.Settings.Base.BaseSettings.html#MCM_Abstractions_Settings_Base_BaseSettings_Id">BaseSettings.Id</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_SettingPropertyGroups.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.SettingPropertyGroups%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Base/PerSave/FluentPerSaveSettings.cs/#L36" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_SettingPropertyGroups_" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.SettingPropertyGroups*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_SettingPropertyGroups" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.SettingPropertyGroups"><a href="#collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_SettingPropertyGroups" class="expander" data-toggle="collapse">SettingPropertyGroups</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_SettingPropertyGroups" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;SettingsPropertyGroupDefinition&gt; SettingPropertyGroups { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="MCM.Abstractions.Settings.Models.SettingsPropertyGroupDefinition.html">SettingsPropertyGroupDefinition</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.Settings.Base.IFluentSettings.html#MCM_Abstractions_Settings_Base_IFluentSettings_SettingPropertyGroups">IFluentSettings.SettingPropertyGroups</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_SubFolder.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.SubFolder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Base/PerSave/FluentPerSaveSettings.cs/#L27" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_SubFolder_" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.SubFolder*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_SubFolder" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.SubFolder"><a href="#collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_SubFolder" class="expander" data-toggle="collapse">SubFolder</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_SubFolder" class="collapse in">
+  <div class="markdown level1 summary"><p>If you want this settings file stored inside a subfolder, set this to the name of the subfolder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed override string SubFolder { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MCM.Abstractions.Settings.Base.BaseSettings.html#MCM_Abstractions_Settings_Base_BaseSettings_SubFolder">BaseSettings.SubFolder</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_SubGroupDelimiter.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.SubGroupDelimiter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Base/PerSave/FluentPerSaveSettings.cs/#L33" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_SubGroupDelimiter_" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.SubGroupDelimiter*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_SubGroupDelimiter" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.SubGroupDelimiter"><a href="#collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_SubGroupDelimiter" class="expander" data-toggle="collapse">SubGroupDelimiter</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_SubGroupDelimiter" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed override char SubGroupDelimiter { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.char">Char</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MCM.Abstractions.Settings.Base.BaseSettings.html#MCM_Abstractions_Settings_Base_BaseSettings_SubGroupDelimiter">BaseSettings.SubGroupDelimiter</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_UIVersion.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.UIVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Base/PerSave/FluentPerSaveSettings.cs/#L31" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_UIVersion_" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.UIVersion*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_UIVersion" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.UIVersion"><a href="#collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_UIVersion" class="expander" data-toggle="collapse">UIVersion</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_UIVersion" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed override int UIVersion { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MCM.Abstractions.Settings.Base.BaseSettings.html#MCM_Abstractions_Settings_Base_BaseSettings_UIVersion">BaseSettings.UIVersion</a></div>
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_CreateNew.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.CreateNew%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Base/PerSave/FluentPerSaveSettings.cs/#L77" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_CreateNew_" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.CreateNew*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_CreateNew" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.CreateNew"><a href="#collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_CreateNew" class="expander" data-toggle="collapse">CreateNew()</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_CreateNew" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override BaseSettings CreateNew()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="MCM.Abstractions.Settings.Base.BaseSettings.html">BaseSettings</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MCM.Abstractions.Settings.Base.BaseSettings.html#MCM_Abstractions_Settings_Base_BaseSettings_CreateNew">BaseSettings.CreateNew()</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_GetAvailablePresets.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.GetAvailablePresets%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Base/PerSave/FluentPerSaveSettings.cs/#L89" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_GetAvailablePresets_" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.GetAvailablePresets*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_GetAvailablePresets" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.GetAvailablePresets"><a href="#collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_GetAvailablePresets" class="expander" data-toggle="collapse">GetAvailablePresets()</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_GetAvailablePresets" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed override IDictionary&lt;string, Func&lt;BaseSettings&gt;&gt; GetAvailablePresets()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="MCM.Abstractions.Settings.Base.BaseSettings.html">BaseSettings</a>&gt;&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MCM.Abstractions.Settings.Base.BaseSettings.html#MCM_Abstractions_Settings_Base_BaseSettings_GetAvailablePresets">BaseSettings.GetAvailablePresets()</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_Register.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.Register%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Base/PerSave/FluentPerSaveSettings.cs/#L65" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_Register_" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.Register*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_Register" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.Register"><a href="#collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_Register" class="expander" data-toggle="collapse">Register()</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_Register" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Register()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_Unregister.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.Unregister%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Base/PerSave/FluentPerSaveSettings.cs/#L70" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_Unregister_" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.Unregister*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_Unregister" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.Unregister"><a href="#collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_Unregister" class="expander" data-toggle="collapse">Unregister()</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_Unregister" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Unregister()</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="events">Events
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_PropertyChanged.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.PropertyChanged%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Base/PerSave/FluentPerSaveSettings.cs/#L35" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  
+  <h4 id="MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_PropertyChanged" data-uid="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.PropertyChanged"><a href="#collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_PropertyChanged" class="expander" data-toggle="collapse">PropertyChanged</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings_PropertyChanged" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed override event PropertyChangedEventHandler PropertyChanged</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventhandler">PropertyChangedEventHandler</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="MCM.Abstractions.Settings.Base.BaseSettings.html#MCM_Abstractions_Settings_Base_BaseSettings_PropertyChanged">BaseSettings.PropertyChanged</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="MCM.Extensions.BaseSettingsExtensions.html#MCM_Extensions_BaseSettingsExtensions_GetSettingPropertyGroups_MCM_Abstractions_Settings_Base_BaseSettings_">BaseSettingsExtensions.GetSettingPropertyGroups(BaseSettings)</a>
+  </div>
+  <div>
+      <a class="xref" href="MCM.Extensions.BaseSettingsExtensions.html#MCM_Extensions_BaseSettingsExtensions_GetUnsortedSettingPropertyGroups_MCM_Abstractions_Settings_Base_BaseSettings_">BaseSettingsExtensions.GetUnsortedSettingPropertyGroups(BaseSettings)</a>
+  </div>
+  <div>
+      <a class="xref" href="MCM.Extensions.BaseSettingsExtensions.html#MCM_Extensions_BaseSettingsExtensions_GetAllSettingPropertyDefinitions_MCM_Abstractions_Settings_Base_BaseSettings_">BaseSettingsExtensions.GetAllSettingPropertyDefinitions(BaseSettings)</a>
+  </div>
+  <div>
+      <a class="xref" href="MCM.Extensions.BaseSettingsExtensions.html#MCM_Extensions_BaseSettingsExtensions_GetAllSettingPropertyGroupDefinitions_MCM_Abstractions_Settings_Base_BaseSettings_">BaseSettingsExtensions.GetAllSettingPropertyGroupDefinitions(BaseSettings)</a>
+  </div>
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Base_PerSave_FluentPerSaveSettings.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Base/PerSave/FluentPerSaveSettings.cs/#L18" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © 2020 Aragas
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

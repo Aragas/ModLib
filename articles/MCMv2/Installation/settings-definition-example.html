@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> | MCM Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content=" | MCM Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link rel="stylesheet" href="../../../styles/collapse-container.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                  </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<p>Example settings.<br>
+Check <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/wiki/Attributes">this page</a> for specific information on the attributes.</p>
+<pre><code class="lang-csharp">    public class CustomSettings : AttributeSettings&lt;CustomSettings&gt;
+    {        
+        // I recommend to use format &quot;INTERNALMODNAME_v1&quot;, e.g. &quot;Aragas.MercenaryContract_v1&quot;
+        // You SHOULD change the version if you change the setting class in a non backwards-compatible way
+        public override string Id { get; set; } = &quot;Aragas.MercenaryContract_v1&quot;;
+        // Your mod name in human readable format, e.g. &quot;Limited Mercenary Contract&quot;
+        public override string ModName =&gt; &quot;Your Mod Name&quot;;
+        // The name of the folder within which the settings will be saved, e.g. &quot;Aragas.MercenaryContract&quot;
+        public override string ModuleFolderName =&gt; &quot;Name_of_Folder_Used_for_Saving_Settings&quot;;
+
+        // Actual configuration definition with the v1 API
+        // v2 API is highly recommended and v1 API is annotated obsolete in latest version (This line add by SaulHE)
+        [SettingProperty(&quot;Enabled&quot;, &quot;&quot;)]
+        [SettingPropertyGroup(&quot;General&quot;)]
+        public bool Enabled { get; set; } = true;
+
+        [SettingProperty(&quot;Apply Relationship Rules to NPC&quot;, &quot;&quot;)]
+        [SettingPropertyGroup(&quot;General&quot;)]
+        public bool ApplyRelationshipRulesToNPC { get; set; } = false;
+
+        [SettingProperty(&quot;Independent Multiplier&quot;, 1, 4, &quot;Relationship multiplier when Hero is independent.&quot;)]
+        [SettingPropertyGroup(&quot;Multipliers&quot;)]
+        public int IndependentMultiplier { get; set; } = 1;
+
+        [SettingProperty(&quot;Mercenary Multiplier&quot;, 1, 4, &quot;Relationship multiplier when Hero is a mercenary.&quot;)]
+        [SettingPropertyGroup(&quot;Multipliers&quot;)]
+        public int MercenaryMultiplier { get; set; } = 1;
+
+        [SettingProperty(&quot;Vassal Multiplier&quot;, 1, 4, &quot;Relationship multiplier when Hero is a vassal.&quot;)]
+        [SettingPropertyGroup(&quot;Multipliers&quot;)]
+        public int VassalMultiplier { get; set; } = 2;
+
+	// Configuration definition with the v2 API
+        [SettingPropertyBool(displayName: &quot;Test Bool&quot;, order: -1, requireRestart: false, hintText: &quot;This is a v2 bool value definition&quot;)]
+        [SettingPropertyGroup(&quot;v2 Test&quot;)]
+        public bool TestBool { get; set; } = true;
+
+        [SettingPropertyFloatingInteger(displayName: &quot;Test Float&quot;, minValue: 0f, maxValue: 1f, requireRestart: false, hintText: &quot;A v2 float definition formatted to a percentage display&quot;, valueFormat: &quot;#0%&quot;)]
+        [SettingPropertyGroup(&quot;v2 Test&quot;)]
+        public float TestFloat { get; set; } = 0.5f;
+
+        [SettingPropertyInteger(displayName: &quot;Test Int&quot;, minValue: 0, maxValue: 50, requireRestart: false, hintText: &quot;A v2 float definition with 'Denars' appended to the value&quot;, valueFormat: &quot;0 Denars&quot;)]
+        [SettingPropertyGroup(&quot;v2 Test&quot;)]
+        public int TestInt { get; set; } = 20;
+
+        [SettingPropertyText(displayName: &quot;Test Text&quot;, order: -1, requireRestart: false, hintText: &quot;A v2 textbox definition&quot;)]
+        [SettingPropertyGroup(&quot;v2 Test&quot;)]
+        public string TestText { get; set; } = &quot;Test&quot;;
+    }
+</code></pre>
+<p>To get the loaded setting in your mod, use the static property <code>CustomSettings.Instance</code>.</p>
+<p>To understand how to format the strings take a look at <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-numeric-format-strings">this</a> page for information and examples (specifically the ToString version).</p>
+<p>Different than ModLib, You don't have to do anything except for implementing your own custom setting class.</p>
+<p>MBOptionScreen will automatically scan any derived classes of <code>AttributeSetting</code> class.</p>
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/docs/articles/MCMv2/Installation/settings-definition-example.md/#L1" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © 2020 Aragas
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

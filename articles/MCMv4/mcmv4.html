@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Overview | MCM Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Overview | MCM Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/collapse-container.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                  </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="overview">Overview</h2>
+
+<p>MCMv4 consists of two libraries:</p>
+<ul>
+<li><strong>MCMv4</strong> - Core. Includes v1/v2 Attribute API and a Fluent Builder API that allows to define settings at runtime. Includes a basic implementation of all abstract interfaces.</li>
+<li><strong>MCMv4.UI</strong> - GauntletUI implementations.</li>
+</ul>
+<p>MCMv4 also provides compatibility layers for other API's (Modules):</p>
+<ul>
+<li><strong>MCM.Adapter.MBO</strong> - MBOv1/MCMv2.</li>
+<li><strong>MCM.Adapter.MCMv3</strong> - MCMv3.</li>
+<li><strong>MCM.Adapter.ModLib</strong> - ModLib, pre 1.3 and post 1.3.</li>
+</ul>
+<p>The compatibility layers replace the original libraries to ensure maximum compatibility with MCM.</p>
+<h2 id="supported-api">Supported API</h2>
+<p>MCMv4 support 6 API sets:</p>
+<ul>
+<li><strong>MCMv4</strong> - main API.</li>
+<li><strong>MBOv1</strong> - MBOptionScreen v1.1.15 (Requires <strong>MCM.Adapter.MBO</strong>)</li>
+<li><strong>MBOv2</strong>/<strong>MCMv2</strong> - v2.0.10 (Requires <strong>MCM.Adapter.MBO</strong>)</li>
+<li><strong>MCMv3</strong> - v3.1.9 (Requires <strong>MCM.Adapter.MCMv3</strong>)</li>
+<li><strong>ModLibV1</strong> - v1.0.0-v1.0.2       (Requires <strong>MCM.Adapter.ModLib</strong>)</li>
+<li><strong>ModLibV13</strong> - v1.3.0-v1.4.0      (Requires <strong>MCM.Adapter.ModLib</strong>)</li>
+</ul>
+<h2 id="using-with-your-mods">Using with your mods</h2>
+<p>You have two options as to how to use MCMv4:</p>
+<ul>
+<li>Include MCMv4 into your mod <code>/bin</code> folder by using NuGet packet <strong><a href="https://www.nuget.org/packages/Bannerlord.MCM">Bannerlord.MCM</a></strong>. Also, add a SubModule entry in <code>SubModules.xml</code>.</li>
+<li>Directly depend on the NexusMods Standalone mod and use NuGet packet <strong><a href="https://www.nuget.org/packages/Bannerlord.MCM">Bannerlord.MCM</a></strong>. Don't include anything in your <code>/bin</code> folder from MCM.</li>
+</ul>
+<p>By including MCMv4 you will be able to save/load settings programmatically, without having the UI Options screen when the Standalone module is not installed.</p>
+<pre><code class="lang-xml">  ...
+  &lt;SubModules&gt;
+    &lt;SubModule&gt;
+      &lt;Name value=&quot;MCMv4&quot; /&gt;
+      &lt;DLLName value=&quot;MCMv4.dll&quot; /&gt;
+      &lt;SubModuleClassType value=&quot;MCM.MCMSubModule&quot; /&gt;
+      &lt;Tags /&gt;
+    &lt;/SubModule&gt;
+    &lt;SubModule&gt;
+      &lt;Name value=&quot;MCMv4 Basic Implementation&quot; /&gt;
+      &lt;DLLName value=&quot;MCMv4.dll&quot; /&gt;
+      &lt;SubModuleClassType value=&quot;MCM.Implementation.MCMImplementationSubModule&quot; /&gt;
+      &lt;Tags /&gt;
+    &lt;/SubModule&gt;
+  &lt;/SubModules&gt;
+  ...
+</code></pre>
+<p>By depending on the standalone module the experience is basically the same as with ModLib. The Nexus standalone module will ensure that your settings are displayed correctly. You also need to add <code>Bannerlord.MBOptionScreen</code> as a dependency to your SubModules.xml!</p>
+<pre><code class="lang-xml">  ...
+  &lt;DependedModules&gt;
+    &lt;DependedModule Id=&quot;Bannerlord.MBOptionScreen&quot;/&gt;
+  &lt;/DependedModules&gt;
+  ...
+</code></pre>
+<h2 id="types-of-settings">Types of settings</h2>
+<p>As of now, Mod Option libraries provided <strong><em>Global</em></strong> options that are shared across different games/saves.</p>
+<p>MCMv4 introduces a second type of settings - <strong><em>PerSave</em></strong>. They are stored in the save file itself. When MCM is removed, the save file will still be playable. Basically, they do not brick the saves. Be aware that saving even once without MCM will wipe all settings from the save file permanently.</p>
+<h2 id="included-settings-formats-and-implementing-your-own">Included Settings Formats and implementing your own</h2>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>In MCMv4, the default settings provider is <code>none</code>, this means that your settings won't be saved to disk unless you override <code>Settings.FormatType</code>!</p>
+</div>
+<p><strong>MCMv4</strong> provides <code>json</code> (<code>json</code> and <code>json2</code> internally) and <code>xml</code> file formats.<br>
+You can define your own file formats and take full control of how the settings are saved/loaded by implementing the interface <a class="xref" href="../../api/MCM.Abstractions.Settings.Formats.ISettingsFormat.html">ISettingsFormat</a>.</p>
+<pre><code class="lang-csharp">internal class YamlSettingsFormat : ISettingsFormat 
+{
+    ...
+    public IEnumerable&lt;string&gt; FormatTypes { get; } = new [] { &quot;your_prefix_yaml&quot;, &quot;your_prefix_yml&quot; };
+    ...
+}
+</code></pre>
+<p>You also need to register the new interface:</p>
+<pre><code class="lang-csharp">// In your MBSubModuleBase override
+protected override void OnSubModuleLoad()
+{
+    base.OnSubModuleLoad();
+
+    if (this.GetServiceContainer() is not null services)
+    {
+        services.AddSettingsFormat&lt;YamlSettingsFormat&gt;();
+    }
+}
+</code></pre>
+<p>Usage:</p>
+<pre><code class="lang-csharp">public abstract class YamlSettings : GlobalSettings&lt;YamlSettings&gt;
+{
+    public override string FormatType { get; } = &quot;your_prefix_yaml&quot;;
+}
+</code></pre>
+<h2 id="presets">Presets</h2>
+<p>The setting support custom presets!<br>
+<img src="../../resources/presets.png" alt=""></p>
+<h3 id="attribute-api">Attribute API</h3>
+<p>The Attribute API based settings will provide a 'Default' preset that can be used to revert the options to their default values.<br>
+To override the 'Default' preset or add your custom presets, override <code>GetAvailablePresets()</code>, here's an example.</p>
+<pre><code class="lang-csharp">public override IDictionary&lt;string, Func&lt;BaseSettings&gt;&gt; GetAvailablePresets()
+{
+    var basePresets = base.GetAvailablePresets(); // include the 'Default' preset that MCM provides
+    basePresets.Add(&quot;Reverse&quot;, () =&gt; new CustomSettings()
+    {
+        Property1 = false,
+        Property2 = true
+    });
+    basePresets.Add(&quot;False&quot;, () =&gt; new CustomSettings()
+    {
+        Property1 = false,
+        Property2 = false
+    });
+    basePresets.Add(&quot;True&quot;, () =&gt; new CustomSettings()
+    {
+        Property1 = true,
+        Property2 = true
+    });
+    return basePresets;
+}
+</code></pre>
+<h3 id="fluent-api">Fluent API</h3>
+<pre><code class="lang-csharp">var builder = BaseSettingsBuilder.Create(&quot;Testing_v1&quot;, &quot;Testing Fluent API Presets&quot;)!
+    ...
+    .CreatePreset(&quot;Test&quot;, presetBuilder =&gt; presetBuilder
+        .SetPropertyValue(&quot;prop_1&quot;, true)
+        .SetPropertyValue(&quot;prop_2&quot;, 2)
+        .SetPropertyValue(&quot;prop_3&quot;, 1.5F)
+        .SetPropertyValue(&quot;prop_4&quot;, &quot;HueHueHue&quot;));
+</code></pre>
+<h2 id="localization">Localization</h2>
+<h3 id="attribute-api-1">Attribute API</h3>
+<p>Both property Name and HintText support game's localization system, this means that you can use such code</p>
+<pre><code class="lang-csharp">[SettingPropertyBool(&quot;{=DvfsSDF}Property Sample&quot;, HintText = &quot;{=DnfhFD}Sample Hint Text.&quot;)]
+[SettingPropertyGroup(&quot;{=JFgbsdg}Group Sample&quot;)]
+</code></pre>
+<p>You also can use the localization system for nested groups!</p>
+<pre><code class="lang-csharp">[SettingPropertyGroup(&quot;{=JFgbsdg}Group Sample\{=GDgsdfj}Nested Group Sample&quot;)]
+</code></pre>
+<h2 id="inotifypropertychanged">INotifyPropertyChanged</h2>
+<p>The settings implement the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a> interface.</p>
+<p>MCM subscribes to it and will refresh the UI if any value has changed.</p>
+<p>MCM will also trigger PropertyChanged event when the setting are saved by providing <code>BaseSettings.SaveTriggered</code> constant with value <code>SAVE_TRIGGERED</code>.</p>
+<h2 id="iref">IRef</h2>
+<p><strong>IRef</strong> is an interface that acts as a link to the actual values that classes like Fluent Builder uses.<br>
+MCMv4 has several implementations:</p>
+<ul>
+<li><a class="xref" href="../../api/MCM.Abstractions.Ref.PropertyRef.html">PropertyRef</a> - links to an actual property (<code>PropertyRef(PropertyInfo propInfo, object instance)</code>).</li>
+<li><a class="xref" href="../../api/MCM.Abstractions.Ref.ProxyRef-1.html">ProxyRef&lt;T&gt;</a> - links to get/set actions (<code>ProxyRef(Func&lt;T&gt; getter, Action&lt;T&gt;? setter)</code>) that will set/return whatever you want.</li>
+<li><a class="xref" href="../../api/MCM.Abstractions.Ref.StorageRef.html">StorageRef</a> - holds a value within itself.</li>
+</ul>
+<h2 id="defining-settings">Defining Settings</h2>
+<p><img src="../../resources/properties.png" alt=""></p>
+<ul>
+<li>Check <a href="mcmv4-attributes.html">this page</a> for using the Attribute definition</li>
+<li>Check <a href="mcmv4-fluent-builder.html">this page</a> for using the Fluent Builder</li>
+</ul>
+<h2 id="example-of-settings-definition">Example of Settings definition</h2>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>In MCMv4, the default settings provider is <code>none</code>, this means that your settings won't be saved to disk unless you override <code>Settings.FormatType</code>!</p>
+</div>
+<h3 id="attribute-api-2">Attribute API</h3>
+<pre><code class="lang-csharp">internal sealed class MCMUISettings : AttributeGlobalSettings&lt;MCMUISettings&gt; // AttributePerSaveSettings&lt;MCMUISettings&gt;
+{
+    private bool _useStandardOptionScreen = false;
+
+    public override string Id =&gt; &quot;MCMUI_v3&quot;;
+    public override string DisplayName =&gt; $&quot;MCM UI Impl. {typeof(MCMUISettings).Assembly.GetName().Version.ToString(3)}&quot;;
+    public override string FolderName =&gt; &quot;MCM&quot;;
+    public override string FormatType =&gt; &quot;json2&quot;;
+
+    [SettingPropertyBool(&quot;Use Standard Option Screen&quot;, Order = 1, RequireRestart = false, HintText = &quot;Use standard Options screen instead of using an external.&quot;)]
+    [SettingPropertyGroup(&quot;General&quot;)]
+    public bool UseStandardOptionScreen
+    {
+        get =&gt; _useStandardOptionScreen;
+        set
+        {
+            if (_useStandardOptionScreen != value)
+            {
+                _useStandardOptionScreen = value;
+                OnPropertyChanged();
+            }
+        }
+    }
+}
+</code></pre>
+<h3 id="fluent-api-1">Fluent API</h3>
+<pre><code class="lang-csharp">bool _boolValue = false;
+int _intValue = 1;
+float _floatValue = 0f;
+string _stringValue = &quot;&quot;;
+var builder = BaseSettingsBuilder.Create(&quot;Testing_Global_v4&quot;, &quot;MCMv4 Testing Fluent Settings&quot;)!
+    .SetFormat(&quot;xml&quot;)
+    .SetFolderName(string.Empty)
+    .SetSubFolder(string.Empty)
+    .CreateGroup(&quot;Testing 1&quot;, groupBuilder =&gt; groupBuilder
+        .AddBool(&quot;prop_1&quot;, &quot;Check Box&quot;, new ProxyRef&lt;bool&gt;(() =&gt; _boolValue, o =&gt; _boolValue = o), boolBuilder =&gt; boolBuilder
+            .SetHintText(&quot;Test&quot;)
+            .SetRequireRestart(false)))
+    .CreateGroup(&quot;Testing 2&quot;, groupBuilder =&gt; groupBuilder
+        .AddInteger(&quot;prop_2&quot;, &quot;Integer&quot;, 0, 10, new ProxyRef&lt;int&gt;(() =&gt; _intValue, o =&gt; _intValue = o), integerBuilder =&gt; integerBuilder
+            .SetHintText(&quot;Testing&quot;))
+        .AddFloatingInteger(&quot;prop_3&quot;, &quot;Floating Integer&quot;, 0, 10, new ProxyRef&lt;float&gt;(() =&gt; _floatValue, o =&gt; _floatValue = o), floatingBuilder =&gt; floatingBuilder
+            .SetRequireRestart(true)
+            .SetHintText(&quot;Test&quot;)))
+    .CreateGroup(&quot;Testing 3&quot;, groupBuilder =&gt; groupBuilder
+        .AddText(&quot;prop_4&quot;, &quot;Test&quot;, new ProxyRef&lt;string&gt;(() =&gt; _stringValue, o =&gt; _stringValue = o), null))
+    .CreatePreset(&quot;Test&quot;, presetBuilder =&gt; presetBuilder
+        .SetPropertyValue(&quot;prop_1&quot;, true)
+        .SetPropertyValue(&quot;prop_2&quot;, 2)
+        .SetPropertyValue(&quot;prop_3&quot;, 1.5F)
+        .SetPropertyValue(&quot;prop_4&quot;, &quot;HueHueHue&quot;));
+
+var globalSettings = builder.BuildAsGlobal();
+globalSettings.Register();
+globalSettings.Unregister();
+
+var perSaveSettings = builder.BuildAsPerSave();
+perSaveSettings.Register();
+perSaveSettings.Unregister();
+</code></pre>
+<h2 id="translating-mcm">Translating MCM</h2>
+<p>Just create a module and include in the module folder root folders <code>ModuleData/Languages</code> and include the translations of the following files:</p>
+<ul>
+<li><a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM.Publish/_Module/ModuleData/Languages/EN/sta_strings.xml">sta_strings.xml</a></li>
+</ul>
+<p>The game will load them automatically!</p>
+<h2 id="migrating-from-v3">Migrating from v3</h2>
+<ul>
+<li>Check <a href="mcmv4-migrating-from-mcmv3.html">this page</a>!</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>Settings.Instance is available <em>after</em> <code>OnSubModuleLoad</code>, so the earliest you can use it is inside <code>OnBeforeInitialModuleScreenSetAsRoot</code></li>
+</ul>
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/docs/articles/MCMv4/mcmv4.md/#L1" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © 2020 Aragas
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,331 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Overview | MCM Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Overview | MCM Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/collapse-container.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                  </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h2 id="overview">Overview</h2>
+
+<p>MCMv3 consists of three core libraries:</p>
+<ul>
+<li><strong>MCMv3</strong> - abstraction layer. Includes v1/v2 Attribute API and a Fluent Builder API that allows to define settings at runtime.</li>
+<li><strong>MCMv3.Implementation</strong> - common implementations.</li>
+<li><strong>MCMv3.UI</strong> - GauntletUI implementations.</li>
+</ul>
+<p>MCMv3 also provides compatibility layers for other mods:</p>
+<ul>
+<li><strong>MCMv3.Implementation.MBO</strong> - MBOv1/MCMv2.</li>
+<li><strong>MCMv3.Implementation.ModLib</strong> - ModLib, pre 1.3 and post 1.3.</li>
+</ul>
+<p>Both compatibility layers replace the original libraries to ensure maximum compatibility with MCMv3.</p>
+<h2 id="supported-api">Supported API</h2>
+<p>MCMv3 support 5 API sets:</p>
+<ul>
+<li><strong>MCMv3</strong> - main API.</li>
+<li><strong>MBOv1</strong> - MBOptionScreen v1.1.15 (Requires <strong>MCM.Implementation.MBO</strong>)</li>
+<li><strong>MBOv2</strong>/<strong>MCMv2</strong> - v2.0.4-v2.0.11 (Requires <strong>MCM.Implementation.MBO</strong>)</li>
+<li><strong>ModLibV1</strong> - v1.0.0-v1.0.2       (Requires <strong>MCM.Implementation.ModLib</strong>)</li>
+<li><strong>ModLibV13</strong> - v1.3.0-v1.4.0      (Requires <strong>MCM.Implementation.ModLib</strong>)</li>
+</ul>
+<h2 id="using-with-your-mods">Using with your mods</h2>
+<p>You have two options as to how to use MCMv3:</p>
+<ul>
+<li>Integrate MCMv3 into your mod by using NuGet packet <strong><a href="https://www.nuget.org/packages/Bannerlord.MCM.Integrated">Bannerlord.MCM.Integrated</a></strong></li>
+<li>Directly depend on the Nexus standalone mod and use NuGet packet <strong><a href="https://www.nuget.org/packages/Bannerlord.MCM">Bannerlord.MCM</a></strong></li>
+</ul>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Integration is no longer supported and should be replaced with MCMv4 or newer.</p>
+</div>
+<p>By integrating MCMv3 you won't need to depend on the Nexus standalone package. It will be loaded with your mod and should pick up the settings from your mod and any other mod that uses MCMv3. ModLib and MBO/MCM compatibility will not be provided.
+<strong>The v3 version still has sometimes issues with the integration system due to game limitations regarding being unable to load multiple versions of the same assembly (DLL). While those issues are not fixed I would suggest to depend on MCM package/Nexus mod if possible. I at least can guarantee that if the standalone MCM mod is installed, any bugs related to MCM are fixed without your need to update the integrated package. The next big release, v4, will not offer an integrated version in favor of the determinism and stability of relying upon a standalone mod.</strong><br>
+You also need to include this to your SubModules.xml!</p>
+<pre><code class="lang-xml">&lt;SubModule&gt;
+  &lt;Name value=&quot;MCMv3 Integrated Loader&quot;/&gt;
+  &lt;DLLName value=&quot;MCMv3.dll&quot;/&gt;
+  &lt;SubModuleClassType value=&quot;MCM.IntegratedLoaderSubModule&quot;/&gt;
+  &lt;Tags/&gt;
+&lt;/SubModule&gt;
+</code></pre>
+<p>By depending on the standalone module the experience is basically the same as to ModLib. You only use the MCMv3 abstraction layer and the Nexus standalone mod will ensure that your settings are displayed.</p>
+<h2 id="types-of-settings">Types of settings</h2>
+<p>As of now, Mod Option mods provided <strong><em>Global</em></strong> options that are shared across different games/saves.</p>
+<p>MCMv3 introduces a second type of settings - <strong><em>PerCharacter</em></strong>, it will be unique for each character and will be shared across saves with the same character.</p>
+<h2 id="included-settings-formats-and-implementing-your-own">Included Settings Formats and implementing your own</h2>
+<p><strong>MCMv3.Implementation</strong> provides <code>json</code> and <code>xml</code> file formats.<br>
+You can define your own file formats and take full control of how the settings are saved/loaded by implementing an interface that... implements <a class="xref" href="../../api/MCM.Abstractions.Settings.Formats.ISettingsFormat.html">ISettingsFormat</a> and @&quot;MCM.Abstractions.IDependency?text=IDependency&quot;.</p>
+<pre><code class="lang-csharp">public interface IYamlSettingsFormat : ISettingsFormat, IDependency
+{
+
+}
+[Version(&quot;e1.0.0&quot;,  1)]
+internal class YamlSettingsFormat : IYamlSettingsFormat 
+{
+
+}
+</code></pre>
+<h2 id="presets">Presets</h2>
+<p>The setting support custom presets!<br>
+<img src="../../resources/presets.png" alt=""></p>
+<h3 id="attribute-api">Attribute API</h3>
+<p>The Attribute API based settings will provide a 'Default' preset that can be used to revert the options to their default values.<br>
+To override the 'Default' preset or add your custom presets, override <code>GetAvailablePresets()</code>, here's an example.</p>
+<pre><code class="lang-csharp">public override IDictionary&lt;string, Func&lt;BaseSettings&gt;&gt; GetAvailablePresets()
+{
+    var basePresets = base.GetAvailablePresets(); // include the 'Default' preset that MCM provides
+    basePresets.Add(&quot;Reverse&quot;, () =&gt; new CustomSettings()
+    {
+        Property1 = false,
+        Property2 = true
+    });
+    basePresets.Add(&quot;False&quot;, () =&gt; new CustomSettings()
+    {
+        Property1 = false,
+        Property2 = false
+    });
+    basePresets.Add(&quot;True&quot;, () =&gt; new CustomSettings()
+    {
+        Property1 = true,
+        Property2 = true
+    });
+    return basePresets;
+}
+</code></pre>
+<h3 id="fluent-api">Fluent API</h3>
+<p>The Fluent Builder does not support Presets in v3, but it's a planned feature for v4!</p>
+<h2 id="localization">Localization</h2>
+<h3 id="attribute-api-1">Attribute API</h3>
+<p>Both property Name and HintText support game's localization system, this means that you can use such code</p>
+<pre><code class="lang-csharp">[SettingPropertyBool(&quot;{=DvfsSDF}Property Sample&quot;, HintText = &quot;{=DnfhFD}Sample Hint Text.&quot;)]
+[SettingPropertyGroup(&quot;{=JFgbsdg}Group Sample&quot;)]
+</code></pre>
+<p>You also can use the localization system for nested groups!</p>
+<pre><code class="lang-csharp">[SettingPropertyGroup(&quot;{=JFgbsdg}Group Sample\{=GDgsdfj}Nested Group Sample&quot;)]
+</code></pre>
+<h2 id="inotifypropertychanged">INotifyPropertyChanged</h2>
+<p>The settings implement the <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a> interface.</p>
+<p>MCM subscribes to it and will refresh the UI if any value has changed.</p>
+<p>MCM will also trigger PropertyChanged event when the setting are saved by providing <code>BaseSettings.SaveTriggered</code> constant with value <code>SAVE_TRIGGERED</code>.</p>
+<h2 id="iref">IRef</h2>
+<p><strong>IRef</strong> is an interface that acts as a link to the actual values that classes like Fluent Builder uses.<br>
+MCMv3 has two implementations:</p>
+<ul>
+<li><a class="xref" href="../../api/MCM.Abstractions.Ref.PropertyRef.html">PropertyRef</a> - links to an actual property (<code>PropertyRef(PropertyInfo propInfo, object instance)</code>).</li>
+<li><a class="xref" href="../../api/MCM.Abstractions.Ref.ProxyRef-1.html">ProxyRef&lt;T&gt;</a> - links to get/set actions (<code>ProxyRef(Func&lt;T&gt; getter, Action&lt;T&gt;? setter)</code>) that will set/return whatever you want.</li>
+</ul>
+<h2 id="defining-settings">Defining Settings</h2>
+<p><img src="../../resources/properties.png" alt=""></p>
+<ul>
+<li>Check <a href="mcmv3-attributes.html">this page</a> for using the Attribute definition</li>
+<li>Check <a href="mcmv3-fluent-builder.html">this page</a> for using the Fluent Builder</li>
+</ul>
+<h2 id="example-of-settings-definition">Example of Settings definition</h2>
+<h3 id="attribute-api-2">Attribute API</h3>
+<pre><code class="lang-csharp">internal sealed class MCMUISettings : AttributeGlobalSettings&lt;MCMUISettings&gt; // AttributePerCharacterSettings&lt;MCMUISettings&gt;
+{
+    private bool _useStandardOptionScreen = false;
+
+    public override string Id =&gt; &quot;MCMUI_v3&quot;;
+    public override string DisplayName =&gt; $&quot;MCM UI Impl. {typeof(MCMUISettings).Assembly.GetName().Version.ToString(3)}&quot;;
+    public override string FolderName =&gt; &quot;MCM&quot;;
+    public override string Format =&gt; &quot;json&quot;;
+
+    [SettingPropertyBool(&quot;Use Standard Option Screen&quot;, Order = 1, RequireRestart = false, HintText = &quot;Use standard Options screen instead of using an external.&quot;)]
+    [SettingPropertyGroup(&quot;General&quot;)]
+    public bool UseStandardOptionScreen
+    {
+        get =&gt; _useStandardOptionScreen;
+        set
+        {
+            if (_useStandardOptionScreen != value)
+            {
+                _useStandardOptionScreen = value;
+                OnPropertyChanged();
+            }
+        }
+    }
+}
+</code></pre>
+<h3 id="fluent-api-1">Fluent API</h3>
+<pre><code class="lang-csharp">bool _boolValue = false;
+int _intValue = 1;
+float _floatValue = 0f;
+string _stringValue = string.Empty;
+var builder = new DefaultSettingsBuilder(&quot;test_v1&quot;, &quot;Test Fluent Settings&quot;)
+    .SetFormat(&quot;xml&quot;)
+    .SetFolderName(string.Empty)
+    .SetSubFolder(string.Empty)
+    .CreateGroup(&quot;Testing 1&quot;, groupBuilder =&gt; groupBuilder
+        .AddBool(&quot;Check Box&quot;, new ProxyRef&lt;bool&gt;(() =&gt; _boolValue, o =&gt; _boolValue = o), boolBuilder =&gt; boolBuilder
+            .SetHintText(&quot;Test&quot;)))
+    .CreateGroup(&quot;Testing 2&quot;, groupBuilder =&gt; groupBuilder
+        .AddInteger(&quot;Integer&quot;, 0, 10, new ProxyRef&lt;int&gt;(() =&gt; _intValue, o =&gt; _intValue = o), integerBuilder =&gt; integerBuilder
+            .SetHintText(&quot;Testing&quot;))
+        .AddFloatingInteger(&quot;Floating Integer&quot;, 0, 10, new ProxyRef&lt;float&gt;(() =&gt; _floatValue, o =&gt; _floatValue = o), floatingBuilder =&gt; floatingBuilder
+            .SetRequireRestart(true)
+            .SetHintText(&quot;Test&quot;)))
+    .CreateGroup(&quot;Testing 3&quot;, groupBuilder =&gt; groupBuilder
+        .AddText(&quot;Test&quot;, new ProxyRef&lt;string&gt;(() =&gt; _stringValue, o =&gt; _stringValue = o), null));
+
+var globalSettings = builder.BuildAsGlobal();
+globalSettings.Register();
+globalSettings.Unregister();
+
+var perCharacterSettings = builder.BuildAsPerCharacter();
+perCharacterSettings.Register();
+perCharacterSettings.Unregister();
+</code></pre>
+<h2 id="translating-mcm">Translating MCM</h2>
+<p>Just create a module and include in the module folder root folders <code>ModuleData/Languages</code> and include the translations of the following files:</p>
+<ul>
+<li><a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/tree/v3/src/Localization/std_MCM.xml">std_MCM.xml</a></li>
+<li><a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/tree/v3/src/Localization/std_MCM_Implementation.xml">std_MCM_Implementation.xml</a></li>
+<li><a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/tree/v3/src/Localization/std_MCM_MBO.xml">std_MCM_MBO.xml</a></li>
+<li><a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/tree/v3/src/Localization/std_MCM_ModLib.xml">std_MCM_ModLib.xml</a></li>
+<li><a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/tree/v3/Localization/std_MCM_UI.xml">std_MCM_UI.xml</a></li>
+</ul>
+<p>The game will load them automatically!</p>
+<h2 id="migrating-to-v3">Migrating to v3</h2>
+<h3 id="modlib-v1-100-102">ModLib v1 (1.0.0-1.0.2)</h3>
+<ul>
+<li>[<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.xml.xmlelement">XmlElement</a>] attribute is not required</li>
+<li>Namespace of <code>SettingPropertyAttribute</code> changed to <a class="xref" href="../../api/MCM.Abstractions.Attributes.v1.html">MCM.Abstractions.Attributes.v1</a></li>
+<li><code>SettingPropertyAttribute.EditableMinValue</code> and <code>SettingPropertyAttribute.EditableMaxValue</code> were removed</li>
+<li><code>SettingPropertyAttribute.HintText</code> is an attribute optional parameter</li>
+<li>MCM's <code>SettingPropertyAttribute</code> introduces new properties <code>Order</code> and <code>RequireRestart</code></li>
+<li>Namespace of <code>SettingPropertyGroupAttribute</code> changed to <a class="xref" href="../../api/MCM.Abstractions.Attributes.html">MCM.Abstractions.Attributes</a></li>
+<li><code>SettingPropertyGroupAttribute.IsMainToggle</code> is an attribute optional parameter</li>
+<li><code>ModLib.SettingsBase</code> needs to be changed to <a class="xref" href="../../api/MCM.Abstractions.Settings.Base.Global.AttributeGlobalSettings-1.html">AttributeGlobalSettings&lt;T&gt;</a></li>
+<li><code>ModName</code> was renamed to <code>DisplayName</code></li>
+<li><code>ModuleFolderName</code> was renamed to <code>FolderName</code>, no longer required</li>
+</ul>
+<h3 id="modlib-v13-13-and-beyond">ModLib v13 (1.3 and beyond)</h3>
+<ul>
+<li>[<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.xml.xmlelement">XmlElement</a>] attribute is not required</li>
+<li>Namespace of <code>SettingPropertyAttribute</code> changed to <a class="xref" href="../../api/MCM.Abstractions.Attributes.v1.html">MCM.Abstractions.Attributes.v1</a></li>
+<li><code>SettingPropertyAttribute.EditableMinValue</code> and <code>SettingPropertyAttribute.EditableMaxValue</code> were removed</li>
+<li><code>SettingPropertyAttribute.HintText</code> is an attribute optional parameter</li>
+<li>MCM's <code>SettingPropertyAttribute</code> introduces new properties <code>Order</code> and <code>RequireRestart</code></li>
+<li>Namespace of <code>SettingPropertyGroupAttribute</code> changed to <a class="xref" href="../../api/MCM.Abstractions.Attributes.html">MCM.Abstractions.Attributes</a></li>
+<li><code>SettingPropertyGroupAttribute.IsMainToggle</code> is an attribute optional parameter</li>
+<li><code>ModLib.Definitions.SettingsBase</code> needs to be changed to <a class="xref" href="../../api/MCM.Abstractions.Settings.Base.Global.AttributeGlobalSettings-1.html">AttributeGlobalSettings&lt;T&gt;</a></li>
+<li><code>ModName</code> was renamed to <code>DisplayName</code></li>
+<li><code>ModuleFolderName</code> was renamed to <code>FolderName</code>, no longer required</li>
+</ul>
+<h3 id="mbov1-mbo-1015-or-lower">MBOv1 (MBO 1.0.15 or lower)</h3>
+<ul>
+<li>Attributes changed its namespace from <code>MBOptionScreen.Attributes</code> to <code>MCM.Abstractions.Attributes</code></li>
+<li><code>MBOptionScreen.Settings.AttributeSettings&lt;T&gt;</code> needs to be changed to <a class="xref" href="../../api/MCM.Abstractions.Settings.Base.Global.AttributeGlobalSettings-1.html">AttributeGlobalSettings&lt;T&gt;</a></li>
+<li><code>ModName</code> was renamed to <code>DisplayName</code></li>
+<li><code>ModuleFolderName</code> was renamed to <code>FolderName</code>, no longer required</li>
+</ul>
+<h3 id="mcmv2-mcm-v2010-or-lower">MCMv2 (MCM v2.0.10 or lower)</h3>
+<ul>
+<li>Attributes changed its namespace from <code>MBOptionScreen.Attributes</code> to <a class="xref" href="../../api/MCM.Abstractions.Attributes.html">MCM.Abstractions.Attributes</a></li>
+<li><code>MBOptionScreen.Settings.AttributeSettings&lt;T&gt;</code> needs to be changed to <a class="xref" href="../../api/MCM.Abstractions.Settings.Base.Global.AttributeGlobalSettings-1.html">AttributeGlobalSettings&lt;T&gt;</a></li>
+<li><code>ModName</code> was renamed to <code>DisplayName</code></li>
+<li><code>ModuleFolderName</code> was renamed to <code>FolderName</code>, no longer required</li>
+</ul>
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/docs/articles/MCMv3/mcmv3.md/#L1" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © 2020 Aragas
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

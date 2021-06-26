@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title> | MCM Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content=" | MCM Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link rel="stylesheet" href="../../../styles/collapse-container.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                  </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<p>For the options to work, you should include the additional SubModule that <code>Bannerlord.MBOptionScreen</code> provides</p>
+<pre><code class="lang-xml">    &lt;SubModule&gt;
+      &lt;Name value=&quot;MBOptionScreen&quot; /&gt;
+      &lt;DLLName value=&quot;MBOptionScreen.v2.0.10.dll&quot; /&gt;
+      &lt;SubModuleClassType value=&quot;MBOptionScreen.MBOptionScreenSubModuleV2010&quot; /&gt;
+      &lt;Tags&gt;
+        &lt;Tag key=&quot;DedicatedServerType&quot; value=&quot;none&quot; /&gt;
+        &lt;Tag key=&quot;IsNoRenderModeElement&quot; value=&quot;false&quot; /&gt;
+      &lt;/Tags&gt;
+    &lt;/SubModule&gt;
+</code></pre>
+<ul>
+<li>You need to reference a specific assembly version. For example, if you are integrating v2.0.4, be sure that the .dll name is <code>MBOptionScreen.v2.0.4.dll</code>.<br>
+The reason for this is that the game might have multiple mods with integrated MBOptionScreen. If the library name is the same one (MBOptionScreen.dll), only one version would be used. It could be a lower version, which will break mods depending on a higher version. By specifying the library version, every <code>MBOptionScreen</code> library will be loaded. While this will take a little more more resources, we can guarantee that <code>MBOptionScreen</code> will always find the latest interface implementations that are compatible with the game version.</li>
+</ul>
+<p>In conclusion, let's say you are making a mod Aragas.MercenaryContract.</p>
+<p>And you would like to use MBOptionScreen as a dependency.</p>
+<p>Instead of your old ways with ModLib(when you add a DependedModule).</p>
+<p>You should add another tag of <code>SubModule</code> inside the <code>SubModules</code> tag.</p>
+<p>So basically your <code>SubModules tag</code> is supposed to hold two <code>SubModule tag</code> inside of itself.</p>
+<p>And they should look like this:</p>
+<pre><code class="lang-xml">&lt;SubModules&gt;
+    &lt;SubModule&gt;
+      &lt;Name value=&quot;Aragas.MercenaryContract&quot; /&gt;
+      &lt;DLLName value=&quot;Aragas.MercenaryContract.dll&quot; /&gt;
+      &lt;SubModuleClassType value=&quot;Aragas.MountAndBlade.MercenaryContractSubModule&quot; /&gt;
+      &lt;Tags&gt;
+        &lt;Tag key=&quot;DedicatedServerType&quot; value=&quot;none&quot; /&gt;
+        &lt;Tag key=&quot;IsNoRenderModeElement&quot; value=&quot;false&quot; /&gt;
+      &lt;/Tags&gt;
+    &lt;/SubModule&gt;
+    &lt;SubModule&gt;
+      &lt;Name value=&quot;MBOptionScreen&quot; /&gt;
+      &lt;DLLName value=&quot;MBOptionScreen.v2.0.4.dll&quot; /&gt;
+      &lt;SubModuleClassType value=&quot;MBOptionScreen.MBOptionScreenSubModule&quot; /&gt;
+      &lt;Tags&gt;
+        &lt;Tag key=&quot;DedicatedServerType&quot; value=&quot;none&quot; /&gt;
+        &lt;Tag key=&quot;IsNoRenderModeElement&quot; value=&quot;false&quot; /&gt;
+      &lt;/Tags&gt;
+    &lt;/SubModule&gt;
+  &lt;/SubModules&gt;
+</code></pre>
+<p>Remember after you compile your mod, there is supposed to be an <code>MBOptionScreen.v%VERSION%.dll</code> inside the <code>Win64_Shipping_Client</code> folder of your module.</p>
+<p>In this way, the Bannerlord launcher should load your module with MBOptionScreen without any problems.</p>
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/docs/articles/MCMv2/Installation/editing-submodule.xml.md/#L1" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © 2020 Aragas
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1041 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SettingsPropertyDefinitionWrapper
+   | MCM Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SettingsPropertyDefinitionWrapper
+   | MCM Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/collapse-container.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                  </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper">
+  <h1 id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper">Class SettingsPropertyDefinitionWrapper
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">SettingsPropertyDefinitionWrapper</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="MCM.Abstractions.Settings.Models.Wrapper.html">MCM.Abstractions.Settings.Models.Wrapper</a></h6>
+  <h6><strong>Assembly</strong>: MCMv4.dll</h6>
+  
+  <h5 id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class SettingsPropertyDefinitionWrapper : ISettingsPropertyDefinition, IPropertyDefinitionBool, IPropertyDefinitionDropdown, IPropertyDefinitionWithMinMax, IPropertyDefinitionWithEditableMinMax, IPropertyDefinitionWithFormat, IPropertyDefinitionWithCustomFormatter, IPropertyDefinitionWithId, IPropertyDefinitionText, IPropertyDefinitionGroupToggle, IPropertyDefinitionBase, IPropertyGroupDefinition</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper__ctor_System_Object_.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.%23ctor(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Models/Wrapper/SettingsPropertyDefinitionWrapper.cs/#L53" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper__ctor_" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.#ctor*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper__ctor_System_Object_" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.#ctor(System.Object)"><a href="#collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper__ctor_System_Object_" class="expander" data-toggle="collapse">SettingsPropertyDefinitionWrapper(Object)</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper__ctor_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SettingsPropertyDefinitionWrapper(object object)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></span>
+        <span class="parametername">object</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_CustomFormatter.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.CustomFormatter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Models/Wrapper/SettingsPropertyDefinitionWrapper.cs/#L42" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_CustomFormatter_" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.CustomFormatter*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_CustomFormatter" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.CustomFormatter"><a href="#collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_CustomFormatter" class="expander" data-toggle="collapse">CustomFormatter</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_CustomFormatter" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type CustomFormatter { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.Settings.Definitions.IPropertyDefinitionWithCustomFormatter.html#MCM_Abstractions_Settings_Definitions_IPropertyDefinitionWithCustomFormatter_CustomFormatter">IPropertyDefinitionWithCustomFormatter.CustomFormatter</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_DisplayName.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.DisplayName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Models/Wrapper/SettingsPropertyDefinitionWrapper.cs/#L22" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_DisplayName_" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.DisplayName*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_DisplayName" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.DisplayName"><a href="#collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_DisplayName" class="expander" data-toggle="collapse">DisplayName</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_DisplayName" class="collapse in">
+  <div class="markdown level1 summary"><p>The display name of the setting in the settings menu.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DisplayName { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.Settings.Definitions.IPropertyDefinitionBase.html#MCM_Abstractions_Settings_Definitions_IPropertyDefinitionBase_DisplayName">IPropertyDefinitionBase.DisplayName</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_EditableMaxValue.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.EditableMaxValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Models/Wrapper/SettingsPropertyDefinitionWrapper.cs/#L36" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_EditableMaxValue_" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.EditableMaxValue*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_EditableMaxValue" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.EditableMaxValue"><a href="#collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_EditableMaxValue" class="expander" data-toggle="collapse">EditableMaxValue</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_EditableMaxValue" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public decimal EditableMaxValue { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.decimal">Decimal</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.Settings.Definitions.IPropertyDefinitionWithEditableMinMax.html#MCM_Abstractions_Settings_Definitions_IPropertyDefinitionWithEditableMinMax_EditableMaxValue">IPropertyDefinitionWithEditableMinMax.EditableMaxValue</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_EditableMinValue.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.EditableMinValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Models/Wrapper/SettingsPropertyDefinitionWrapper.cs/#L34" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_EditableMinValue_" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.EditableMinValue*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_EditableMinValue" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.EditableMinValue"><a href="#collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_EditableMinValue" class="expander" data-toggle="collapse">EditableMinValue</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_EditableMinValue" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public decimal EditableMinValue { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.decimal">Decimal</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.Settings.Definitions.IPropertyDefinitionWithEditableMinMax.html#MCM_Abstractions_Settings_Definitions_IPropertyDefinitionWithEditableMinMax_EditableMinValue">IPropertyDefinitionWithEditableMinMax.EditableMinValue</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_GroupName.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.GroupName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Models/Wrapper/SettingsPropertyDefinitionWrapper.cs/#L44" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_GroupName_" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.GroupName*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_GroupName" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.GroupName"><a href="#collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_GroupName" class="expander" data-toggle="collapse">GroupName</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_GroupName" class="collapse in">
+  <div class="markdown level1 summary"><p>The name of the settings group. Includes SubGroup notation if present.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GroupName { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.Settings.Definitions.IPropertyGroupDefinition.html#MCM_Abstractions_Settings_Definitions_IPropertyGroupDefinition_GroupName">IPropertyGroupDefinition.GroupName</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_GroupOrder.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.GroupOrder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Models/Wrapper/SettingsPropertyDefinitionWrapper.cs/#L46" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_GroupOrder_" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.GroupOrder*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_GroupOrder" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.GroupOrder"><a href="#collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_GroupOrder" class="expander" data-toggle="collapse">GroupOrder</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_GroupOrder" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GroupOrder { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.Settings.Definitions.IPropertyGroupDefinition.html#MCM_Abstractions_Settings_Definitions_IPropertyGroupDefinition_GroupOrder">IPropertyGroupDefinition.GroupOrder</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_HintText.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.HintText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Models/Wrapper/SettingsPropertyDefinitionWrapper.cs/#L28" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_HintText_" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.HintText*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_HintText" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.HintText"><a href="#collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_HintText" class="expander" data-toggle="collapse">HintText</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_HintText" class="collapse in">
+  <div class="markdown level1 summary"><p>The hint text that is displayed at the bottom of the screen when the user hovers over the setting in the settings menu.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string HintText { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.Settings.Definitions.IPropertyDefinitionBase.html#MCM_Abstractions_Settings_Definitions_IPropertyDefinitionBase_HintText">IPropertyDefinitionBase.HintText</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_Id.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Models/Wrapper/SettingsPropertyDefinitionWrapper.cs/#L48" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_Id_" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.Id*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_Id" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.Id"><a href="#collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_Id" class="expander" data-toggle="collapse">Id</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_Id" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Id { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.Settings.Definitions.IPropertyDefinitionWithId.html#MCM_Abstractions_Settings_Definitions_IPropertyDefinitionWithId_Id">IPropertyDefinitionWithId.Id</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_IsToggle.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.IsToggle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Models/Wrapper/SettingsPropertyDefinitionWrapper.cs/#L50" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_IsToggle_" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.IsToggle*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_IsToggle" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.IsToggle"><a href="#collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_IsToggle" class="expander" data-toggle="collapse">IsToggle</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_IsToggle" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsToggle { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.Settings.Definitions.IPropertyDefinitionGroupToggle.html#MCM_Abstractions_Settings_Definitions_IPropertyDefinitionGroupToggle_IsToggle">IPropertyDefinitionGroupToggle.IsToggle</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_MaxValue.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.MaxValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Models/Wrapper/SettingsPropertyDefinitionWrapper.cs/#L30" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_MaxValue_" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.MaxValue*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_MaxValue" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.MaxValue"><a href="#collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_MaxValue" class="expander" data-toggle="collapse">MaxValue</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_MaxValue" class="collapse in">
+  <div class="markdown level1 summary"><p>The maximum value the setting can be set to. Used by the slider control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public decimal MaxValue { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.decimal">Decimal</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.Settings.Definitions.IPropertyDefinitionWithMinMax.html#MCM_Abstractions_Settings_Definitions_IPropertyDefinitionWithMinMax_MaxValue">IPropertyDefinitionWithMinMax.MaxValue</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_MinValue.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.MinValue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Models/Wrapper/SettingsPropertyDefinitionWrapper.cs/#L32" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_MinValue_" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.MinValue*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_MinValue" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.MinValue"><a href="#collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_MinValue" class="expander" data-toggle="collapse">MinValue</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_MinValue" class="collapse in">
+  <div class="markdown level1 summary"><p>The minimum value the setting can be set to. Used by the slider control.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public decimal MinValue { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.decimal">Decimal</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.Settings.Definitions.IPropertyDefinitionWithMinMax.html#MCM_Abstractions_Settings_Definitions_IPropertyDefinitionWithMinMax_MinValue">IPropertyDefinitionWithMinMax.MinValue</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_Order.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.Order%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Models/Wrapper/SettingsPropertyDefinitionWrapper.cs/#L24" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_Order_" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.Order*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_Order" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.Order"><a href="#collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_Order" class="expander" data-toggle="collapse">Order</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_Order" class="collapse in">
+  <div class="markdown level1 summary"><p>Require restart of the game if the value is changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Order { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.Settings.Definitions.IPropertyDefinitionBase.html#MCM_Abstractions_Settings_Definitions_IPropertyDefinitionBase_Order">IPropertyDefinitionBase.Order</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_PropertyReference.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.PropertyReference%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Models/Wrapper/SettingsPropertyDefinitionWrapper.cs/#L18" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_PropertyReference_" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.PropertyReference*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_PropertyReference" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.PropertyReference"><a href="#collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_PropertyReference" class="expander" data-toggle="collapse">PropertyReference</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_PropertyReference" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IRef PropertyReference { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="MCM.Abstractions.Ref.IRef.html">IRef</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.Settings.Models.ISettingsPropertyDefinition.html#MCM_Abstractions_Settings_Models_ISettingsPropertyDefinition_PropertyReference">ISettingsPropertyDefinition.PropertyReference</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_RequireRestart.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.RequireRestart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Models/Wrapper/SettingsPropertyDefinitionWrapper.cs/#L26" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_RequireRestart_" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.RequireRestart*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_RequireRestart" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.RequireRestart"><a href="#collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_RequireRestart" class="expander" data-toggle="collapse">RequireRestart</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_RequireRestart" class="collapse in">
+  <div class="markdown level1 summary"><p>Require restart of the game if the value is changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RequireRestart { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.Settings.Definitions.IPropertyDefinitionBase.html#MCM_Abstractions_Settings_Definitions_IPropertyDefinitionBase_RequireRestart">IPropertyDefinitionBase.RequireRestart</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_SelectedIndex.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.SelectedIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Models/Wrapper/SettingsPropertyDefinitionWrapper.cs/#L38" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_SelectedIndex_" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.SelectedIndex*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_SelectedIndex" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.SelectedIndex"><a href="#collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_SelectedIndex" class="expander" data-toggle="collapse">SelectedIndex</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_SelectedIndex" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int SelectedIndex { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.Settings.Definitions.IPropertyDefinitionDropdown.html#MCM_Abstractions_Settings_Definitions_IPropertyDefinitionDropdown_SelectedIndex">IPropertyDefinitionDropdown.SelectedIndex</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_SettingType.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.SettingType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Models/Wrapper/SettingsPropertyDefinitionWrapper.cs/#L20" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_SettingType_" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.SettingType*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_SettingType" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.SettingType"><a href="#collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_SettingType" class="expander" data-toggle="collapse">SettingType</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_SettingType" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SettingType SettingType { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="MCM.Abstractions.Settings.SettingType.html">SettingType</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.Settings.Models.ISettingsPropertyDefinition.html#MCM_Abstractions_Settings_Models_ISettingsPropertyDefinition_SettingType">ISettingsPropertyDefinition.SettingType</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_ValueFormat.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.ValueFormat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Models/Wrapper/SettingsPropertyDefinitionWrapper.cs/#L40" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_ValueFormat_" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.ValueFormat*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_ValueFormat" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.ValueFormat"><a href="#collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_ValueFormat" class="expander" data-toggle="collapse">ValueFormat</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_ValueFormat" class="collapse in">
+  <div class="markdown level1 summary"><p>The format in which the slider's value will be displayed in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ValueFormat { get; }</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.Settings.Definitions.IPropertyDefinitionWithFormat.html#MCM_Abstractions_Settings_Definitions_IPropertyDefinitionWithFormat_ValueFormat">IPropertyDefinitionWithFormat.ValueFormat</a></div>
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_Clone_System_Boolean_.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.Clone(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Models/Wrapper/SettingsPropertyDefinitionWrapper.cs/#L124" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_Clone_" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.Clone*"></a>
+  
+  <h4 id="MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_Clone_System_Boolean_" data-uid="MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper.Clone(System.Boolean)"><a href="#collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_Clone_System_Boolean_" class="expander" data-toggle="collapse">Clone(Boolean)</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper_Clone_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SettingsPropertyDefinition Clone(bool keepRefs = true)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></span>
+        <span class="parametername">keepRefs</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="MCM.Abstractions.Settings.Models.SettingsPropertyDefinition.html">SettingsPropertyDefinition</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.Settings.Models.ISettingsPropertyDefinition.html#MCM_Abstractions_Settings_Models_ISettingsPropertyDefinition_Clone_System_Boolean_">ISettingsPropertyDefinition.Clone(Boolean)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_Settings_Models_Wrapper_SettingsPropertyDefinitionWrapper.md&amp;value=---%0Auid%3A%20MCM.Abstractions.Settings.Models.Wrapper.SettingsPropertyDefinitionWrapper%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/Settings/Models/Wrapper/SettingsPropertyDefinitionWrapper.cs/#L15" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © 2020 Aragas
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

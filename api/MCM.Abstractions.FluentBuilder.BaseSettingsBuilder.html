@@ -1,0 +1,769 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BaseSettingsBuilder
+   | MCM Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BaseSettingsBuilder
+   | MCM Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/collapse-container.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                  </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MCM.Abstractions.FluentBuilder.BaseSettingsBuilder">
+  <h1 id="MCM_Abstractions_FluentBuilder_BaseSettingsBuilder" data-uid="MCM.Abstractions.FluentBuilder.BaseSettingsBuilder">Class BaseSettingsBuilder
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">BaseSettingsBuilder</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="MCM.Abstractions.FluentBuilder.html">MCM.Abstractions.FluentBuilder</a></h6>
+  <h6><strong>Assembly</strong>: MCMv4.dll</h6>
+  
+  <h5 id="MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class BaseSettingsBuilder : ISettingsBuilder</code></pre>
+  </div>
+  
+  
+  
+  
+  
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_BuildAsGlobal.md&amp;value=---%0Auid%3A%20MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.BuildAsGlobal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/FluentBuilder/BaseSettingsBuilder.cs/#L26" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_BuildAsGlobal_" data-uid="MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.BuildAsGlobal*"></a>
+  
+  <h4 id="MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_BuildAsGlobal" data-uid="MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.BuildAsGlobal"><a href="#collapsible-MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_BuildAsGlobal" class="expander" data-toggle="collapse">BuildAsGlobal()</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_BuildAsGlobal" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract FluentGlobalSettings BuildAsGlobal()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="MCM.Abstractions.Settings.Base.Global.FluentGlobalSettings.html">FluentGlobalSettings</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.FluentBuilder.ISettingsBuilder.html#MCM_Abstractions_FluentBuilder_ISettingsBuilder_BuildAsGlobal">ISettingsBuilder.BuildAsGlobal()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_BuildAsPerSave.md&amp;value=---%0Auid%3A%20MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.BuildAsPerSave%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/FluentBuilder/BaseSettingsBuilder.cs/#L27" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_BuildAsPerSave_" data-uid="MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.BuildAsPerSave*"></a>
+  
+  <h4 id="MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_BuildAsPerSave" data-uid="MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.BuildAsPerSave"><a href="#collapsible-MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_BuildAsPerSave" class="expander" data-toggle="collapse">BuildAsPerSave()</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_BuildAsPerSave" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract FluentPerSaveSettings BuildAsPerSave()</code></pre>
+  </div>
+  
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="MCM.Abstractions.Settings.Base.PerSave.FluentPerSaveSettings.html">FluentPerSaveSettings</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.FluentBuilder.ISettingsBuilder.html#MCM_Abstractions_FluentBuilder_ISettingsBuilder_BuildAsPerSave">ISettingsBuilder.BuildAsPerSave()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_Create_System_String_System_String_.md&amp;value=---%0Auid%3A%20MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.Create(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/FluentBuilder/BaseSettingsBuilder.cs/#L13" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_Create_" data-uid="MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.Create*"></a>
+  
+  <h4 id="MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_Create_System_String_System_String_" data-uid="MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.Create(System.String,System.String)"><a href="#collapsible-MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_Create_System_String_System_String_" class="expander" data-toggle="collapse">Create(String, String)</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_Create_System_String_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ISettingsBuilder Create(string id, string displayName)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">id</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">displayName</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="MCM.Abstractions.FluentBuilder.ISettingsBuilder.html">ISettingsBuilder</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_CreateGroup_System_String_System_Action_MCM_Abstractions_FluentBuilder_ISettingsPropertyGroupBuilder__.md&amp;value=---%0Auid%3A%20MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.CreateGroup(System.String%2CSystem.Action%7BMCM.Abstractions.FluentBuilder.ISettingsPropertyGroupBuilder%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/FluentBuilder/BaseSettingsBuilder.cs/#L23" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_CreateGroup_" data-uid="MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.CreateGroup*"></a>
+  
+  <h4 id="MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_CreateGroup_System_String_System_Action_MCM_Abstractions_FluentBuilder_ISettingsPropertyGroupBuilder__" data-uid="MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.CreateGroup(System.String,System.Action{MCM.Abstractions.FluentBuilder.ISettingsPropertyGroupBuilder})"><a href="#collapsible-MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_CreateGroup_System_String_System_Action_MCM_Abstractions_FluentBuilder_ISettingsPropertyGroupBuilder__" class="expander" data-toggle="collapse">CreateGroup(String, Action&lt;ISettingsPropertyGroupBuilder&gt;)</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_CreateGroup_System_String_System_Action_MCM_Abstractions_FluentBuilder_ISettingsPropertyGroupBuilder__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ISettingsBuilder CreateGroup(string name, Action&lt;ISettingsPropertyGroupBuilder&gt; builder)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="MCM.Abstractions.FluentBuilder.ISettingsPropertyGroupBuilder.html">ISettingsPropertyGroupBuilder</a>&gt;</span>
+        <span class="parametername">builder</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="MCM.Abstractions.FluentBuilder.ISettingsBuilder.html">ISettingsBuilder</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.FluentBuilder.ISettingsBuilder.html#MCM_Abstractions_FluentBuilder_ISettingsBuilder_CreateGroup_System_String_System_Action_MCM_Abstractions_FluentBuilder_ISettingsPropertyGroupBuilder__">ISettingsBuilder.CreateGroup(String, Action&lt;ISettingsPropertyGroupBuilder&gt;)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_CreatePreset_System_String_System_Action_MCM_Abstractions_FluentBuilder_ISettingsPresetBuilder__.md&amp;value=---%0Auid%3A%20MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.CreatePreset(System.String%2CSystem.Action%7BMCM.Abstractions.FluentBuilder.ISettingsPresetBuilder%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/FluentBuilder/BaseSettingsBuilder.cs/#L24" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_CreatePreset_" data-uid="MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.CreatePreset*"></a>
+  
+  <h4 id="MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_CreatePreset_System_String_System_Action_MCM_Abstractions_FluentBuilder_ISettingsPresetBuilder__" data-uid="MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.CreatePreset(System.String,System.Action{MCM.Abstractions.FluentBuilder.ISettingsPresetBuilder})"><a href="#collapsible-MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_CreatePreset_System_String_System_Action_MCM_Abstractions_FluentBuilder_ISettingsPresetBuilder__" class="expander" data-toggle="collapse">CreatePreset(String, Action&lt;ISettingsPresetBuilder&gt;)</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_CreatePreset_System_String_System_Action_MCM_Abstractions_FluentBuilder_ISettingsPresetBuilder__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ISettingsBuilder CreatePreset(string name, Action&lt;ISettingsPresetBuilder&gt; builder)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="MCM.Abstractions.FluentBuilder.ISettingsPresetBuilder.html">ISettingsPresetBuilder</a>&gt;</span>
+        <span class="parametername">builder</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="MCM.Abstractions.FluentBuilder.ISettingsBuilder.html">ISettingsBuilder</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.FluentBuilder.ISettingsBuilder.html#MCM_Abstractions_FluentBuilder_ISettingsBuilder_CreatePreset_System_String_System_Action_MCM_Abstractions_FluentBuilder_ISettingsPresetBuilder__">ISettingsBuilder.CreatePreset(String, Action&lt;ISettingsPresetBuilder&gt;)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetFolderName_System_String_.md&amp;value=---%0Auid%3A%20MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.SetFolderName(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/FluentBuilder/BaseSettingsBuilder.cs/#L16" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetFolderName_" data-uid="MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.SetFolderName*"></a>
+  
+  <h4 id="MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetFolderName_System_String_" data-uid="MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.SetFolderName(System.String)"><a href="#collapsible-MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetFolderName_System_String_" class="expander" data-toggle="collapse">SetFolderName(String)</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetFolderName_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ISettingsBuilder SetFolderName(string value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="MCM.Abstractions.FluentBuilder.ISettingsBuilder.html">ISettingsBuilder</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.FluentBuilder.ISettingsBuilder.html#MCM_Abstractions_FluentBuilder_ISettingsBuilder_SetFolderName_System_String_">ISettingsBuilder.SetFolderName(String)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetFormat_System_String_.md&amp;value=---%0Auid%3A%20MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.SetFormat(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/FluentBuilder/BaseSettingsBuilder.cs/#L18" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetFormat_" data-uid="MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.SetFormat*"></a>
+  
+  <h4 id="MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetFormat_System_String_" data-uid="MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.SetFormat(System.String)"><a href="#collapsible-MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetFormat_System_String_" class="expander" data-toggle="collapse">SetFormat(String)</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetFormat_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ISettingsBuilder SetFormat(string value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="MCM.Abstractions.FluentBuilder.ISettingsBuilder.html">ISettingsBuilder</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.FluentBuilder.ISettingsBuilder.html#MCM_Abstractions_FluentBuilder_ISettingsBuilder_SetFormat_System_String_">ISettingsBuilder.SetFormat(String)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetOnPropertyChanged_System_ComponentModel_PropertyChangedEventHandler_.md&amp;value=---%0Auid%3A%20MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.SetOnPropertyChanged(System.ComponentModel.PropertyChangedEventHandler)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/FluentBuilder/BaseSettingsBuilder.cs/#L21" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetOnPropertyChanged_" data-uid="MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.SetOnPropertyChanged*"></a>
+  
+  <h4 id="MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetOnPropertyChanged_System_ComponentModel_PropertyChangedEventHandler_" data-uid="MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.SetOnPropertyChanged(System.ComponentModel.PropertyChangedEventHandler)"><a href="#collapsible-MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetOnPropertyChanged_System_ComponentModel_PropertyChangedEventHandler_" class="expander" data-toggle="collapse">SetOnPropertyChanged(PropertyChangedEventHandler)</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetOnPropertyChanged_System_ComponentModel_PropertyChangedEventHandler_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ISettingsBuilder SetOnPropertyChanged(PropertyChangedEventHandler value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventhandler">PropertyChangedEventHandler</a></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="MCM.Abstractions.FluentBuilder.ISettingsBuilder.html">ISettingsBuilder</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.FluentBuilder.ISettingsBuilder.html#MCM_Abstractions_FluentBuilder_ISettingsBuilder_SetOnPropertyChanged_System_ComponentModel_PropertyChangedEventHandler_">ISettingsBuilder.SetOnPropertyChanged(PropertyChangedEventHandler)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetSubFolder_System_String_.md&amp;value=---%0Auid%3A%20MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.SetSubFolder(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/FluentBuilder/BaseSettingsBuilder.cs/#L17" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetSubFolder_" data-uid="MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.SetSubFolder*"></a>
+  
+  <h4 id="MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetSubFolder_System_String_" data-uid="MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.SetSubFolder(System.String)"><a href="#collapsible-MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetSubFolder_System_String_" class="expander" data-toggle="collapse">SetSubFolder(String)</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetSubFolder_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ISettingsBuilder SetSubFolder(string value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="MCM.Abstractions.FluentBuilder.ISettingsBuilder.html">ISettingsBuilder</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.FluentBuilder.ISettingsBuilder.html#MCM_Abstractions_FluentBuilder_ISettingsBuilder_SetSubFolder_System_String_">ISettingsBuilder.SetSubFolder(String)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetSubGroupDelimiter_System_Char_.md&amp;value=---%0Auid%3A%20MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.SetSubGroupDelimiter(System.Char)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/FluentBuilder/BaseSettingsBuilder.cs/#L20" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetSubGroupDelimiter_" data-uid="MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.SetSubGroupDelimiter*"></a>
+  
+  <h4 id="MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetSubGroupDelimiter_System_Char_" data-uid="MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.SetSubGroupDelimiter(System.Char)"><a href="#collapsible-MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetSubGroupDelimiter_System_Char_" class="expander" data-toggle="collapse">SetSubGroupDelimiter(Char)</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetSubGroupDelimiter_System_Char_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ISettingsBuilder SetSubGroupDelimiter(char value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.char">Char</a></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="MCM.Abstractions.FluentBuilder.ISettingsBuilder.html">ISettingsBuilder</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.FluentBuilder.ISettingsBuilder.html#MCM_Abstractions_FluentBuilder_ISettingsBuilder_SetSubGroupDelimiter_System_Char_">ISettingsBuilder.SetSubGroupDelimiter(Char)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider"> </span>
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetUIVersion_System_Int32_.md&amp;value=---%0Auid%3A%20MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.SetUIVersion(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc"><i class="fa fa-pencil"></i></a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/FluentBuilder/BaseSettingsBuilder.cs/#L19" title="View Source"><i class="fa fa-code"></i></a>
+  </span>
+  
+  <a id="MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetUIVersion_" data-uid="MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.SetUIVersion*"></a>
+  
+  <h4 id="MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetUIVersion_System_Int32_" data-uid="MCM.Abstractions.FluentBuilder.BaseSettingsBuilder.SetUIVersion(System.Int32)"><a href="#collapsible-MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetUIVersion_System_Int32_" class="expander" data-toggle="collapse">SetUIVersion(Int32)</a></h4>
+  
+  <div id="collapsible-MCM_Abstractions_FluentBuilder_BaseSettingsBuilder_SetUIVersion_System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ISettingsBuilder SetUIVersion(int value)</code></pre>
+  </div>
+  
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="MCM.Abstractions.FluentBuilder.ISettingsBuilder.html">ISettingsBuilder</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="MCM.Abstractions.FluentBuilder.ISettingsBuilder.html#MCM_Abstractions_FluentBuilder_ISettingsBuilder_SetUIVersion_System_Int32_">ISettingsBuilder.SetUIVersion(Int32)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/new/dev/apiSpec/new?filename=MCM_Abstractions_FluentBuilder_BaseSettingsBuilder.md&amp;value=---%0Auid%3A%20MCM.Abstractions.FluentBuilder.BaseSettingsBuilder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+              <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/src/MCM/Abstractions/FluentBuilder/BaseSettingsBuilder.cs/#L11" title="View Source" class="fab btn-info pull-right"><i class="fa fa-code"></i></a>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © 2020 Aragas
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>v1 | MCM Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="v1 | MCM Documentation ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/collapse-container.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                  </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<p>Each setting you want to add to the menu has to be marked with an attribute.
+You can additionally group settings by adding the <a class="xref" href="../../api/MCM.Abstractions.Attributes.SettingPropertyGroupAttribute.html">SettingPropertyGroup</a> attribute. <code>'/'</code> is used as the default separator.</p>
+<p>Right now, the mod provides these types in the setting menu:</p>
+<ul>
+<li>Bool</li>
+<li>Int Slider / Textbox</li>
+<li>Float Slider / Textbox</li>
+<li>Textbox</li>
+<li>Dropdown</li>
+</ul>
+<h2 id="v1">v1</h2>
+<p>With v1 of the API, <a class="xref" href="../../api/MCM.Abstractions.Attributes.v1.SettingPropertyAttribute.html">SettingProperty</a> has multiple constructors, each designed for the specific value it represents.</p>
+<h4 id="bool">Bool</h4>
+<pre><code class="lang-csharp">[SettingProperty(&quot;Setting Name&quot;, RequireRestart = false, HintText = &quot;Setting explanation.&quot;)]
+[SettingPropertyGroup(&quot;Main Group Name/Nested Group Name/Second Nested Group Name&quot;)]
+public bool SettingVariableName { get; set; } = true;
+</code></pre>
+<h4 id="int">Int</h4>
+<pre><code class="lang-csharp">[SettingProperty(&quot;Setting Name&quot;, minValue: 0, maxValue: 10, RequireRestart = false, HintText = &quot;Setting explanation.&quot;)]
+[SettingPropertyGroup(&quot;Main Group Name/Nested Group Name/Second Nested Group Name&quot;)]
+public int SettingVariableName { get; set; } = 5;
+</code></pre>
+<h4 id="float">Float</h4>
+<pre><code class="lang-csharp">[SettingProperty(&quot;Setting Name&quot;, minValue: 0f, maxValue: 0.5f, RequireRestart = false, HintText = &quot;Setting explanation.&quot;)]
+[SettingPropertyGroup(&quot;Main Group Name/Nested Group Name/Second Nested Group Name&quot;)]
+public float SettingVariableName { get; set; } = 0.2f;
+</code></pre>
+<h4 id="string">String</h4>
+<pre><code class="lang-csharp">[SettingProperty(&quot;Setting Name&quot;, RequireRestart = false, HintText = &quot;Setting explanation.&quot;)]
+[SettingPropertyGroup(&quot;Main Group Name/Nested Group Name/Second Nested Group Name&quot;)]
+public string SettingVariableName { get; set; } = &quot;The textbox data is here&quot;;
+</code></pre>
+<h2 id="v2">v2</h2>
+<p>With v2 of the API, there's multiple types of setting properties to make using them less confusing, and the settings can also be ordered by indexing them. It's also possible to format the display of the numerical values for the int and float sliders.</p>
+<h4 id="bool-">Bool (<a class="xref" href="../../api/MCM.Abstractions.Attributes.v2.SettingPropertyBoolAttribute.html">SettingPropertyBool</a>)</h4>
+<pre><code class="lang-csharp">[SettingPropertyBool(&quot;Setting Name&quot;, Order = 0, RequireRestart = false, HintText = &quot;Setting explanation.&quot;)]
+[SettingPropertyGroup(&quot;Main Group Name/Nested Group Name/Second Nested Group Name&quot;)]
+public bool SettingVariableName { get; set; } = true;
+</code></pre>
+<h4 id="int-">Int (<a class="xref" href="../../api/MCM.Abstractions.Attributes.v2.SettingPropertyIntegerAttribute.html">SettingPropertyInteger</a>)</h4>
+<pre><code class="lang-csharp">// Value is displayed as &quot;X Denars&quot;
+[SettingPropertyInteger(&quot;Setting Name&quot;, 0, 100, &quot;0 Denars&quot;, Order = 1, RequireRestart = false, HintText = &quot;Setting explanation.&quot;)]
+[SettingPropertyGroup(&quot;Main Group Name/Nested Group Name/Second Nested Group Name&quot;)]
+public int SettingVariableName { get; set; } = 25;
+</code></pre>
+<h4 id="float-">Float (<a class="xref" href="../../api/MCM.Abstractions.Attributes.v2.SettingPropertyFloatingIntegerAttribute.html">SettingPropertyFloatingInteger</a>)</h4>
+<pre><code class="lang-csharp">// Value is displayed as a percentage
+[SettingPropertyFloatingInteger(&quot;Setting Name&quot;, 0f, 1f, &quot;#0%&quot;, Order = 2, RequireRestart = false, HintText = &quot;Setting explanation.&quot;)]
+[SettingPropertyGroup(&quot;Main Group Name/Nested Group Name/Second Nested Group Name&quot;)]
+public bool SettingVariableName { get; set; } = 0.75;
+</code></pre>
+<h4 id="string-">String (<a class="xref" href="../../api/MCM.Abstractions.Attributes.v2.SettingPropertyTextAttribute.html">SettingPropertyText</a>)</h4>
+<pre><code class="lang-csharp">// Value is displayed as a percentage
+[SettingPropertyText(&quot;Setting Name&quot;, Order = 3, RequireRestart = false, HintText = &quot;Setting Explanation&quot;)]
+[SettingPropertyGroup(&quot;Main Group Name/Nested Group Name/Second Nested Group Name&quot;)]
+public string SettingVariableName { get; set; } = &quot;The textbox data is here&quot;;
+</code></pre>
+<p>To understand how to format the strings take a look at <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-numeric-format-strings">this</a> page for information and examples (specifically the ToString version).</p>
+<h4 id="dropdown-">Dropdown (<a class="xref" href="../../api/MCM.Abstractions.Attributes.v2.SettingPropertyDropdownAttribute.html">SettingPropertyDropdown</a>)</h4>
+<pre><code class="lang-csharp">[SettingPropertyDropdown(&quot;Setting Name&quot;)]
+[SettingPropertyGroup(&quot;Main Group Name/Nested Group Name/Second Nested Group Name&quot;)]
+public DefaultDropdown&lt;string&gt; SettingVariableName { get; set; } = new DefaultDropdown&lt;string&gt;(new string[]
+{
+    &quot;Test1&quot;,
+    &quot;Test2&quot;,
+    &quot;Test3&quot;
+}, 0);
+</code></pre>
+<p>It can also use custom classes. Don't forget to override .ToString()!</p>
+<pre><code class="lang-csharp">[SettingPropertyDropdown(&quot;Setting Name&quot;)]
+[SettingPropertyGroup(&quot;Main Group Name/Nested Group Name/Second Nested Group Name&quot;)]
+public DefaultDropdown&lt;CustomObject&gt; SettingVariableName { get; set; } = new DefaultDropdown&lt;CustomObject&gt;(new CustomObject[]
+{
+    new CustomObject(&quot;Test1&quot;),
+    new CustomObject(&quot;Test2&quot;),
+    new CustomObject(&quot;Test3&quot;)
+}, 0);
+public class CustomObject
+{
+    private readonly string _value;
+    public CustomObject(string value) =&gt; _value = value;
+    public override string ToString() =&gt; _value;
+}
+</code></pre>
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+              <a href="https://github.com/Aragas/Bannerlord.MBOptionScreen/blob/dev/docs/articles/MCMv3/mcmv3-attributes.md/#L1" title="Improve this Doc" class="fab btn-warning pull-right"><i class="glyphicon glyphicon-pencil"></i></a>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © 2020 Aragas
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

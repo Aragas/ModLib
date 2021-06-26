@@ -1,0 +1,207 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css");
+@import "main-dark.css";
+
+/* Clickability fix for selector on sm devices */
+@media (min-width: 768px) and (max-width: 991px) {
+  article h1:first-of-type:before {
+    height: 0;
+    margin-top: 0;
+  }
+}
+
+/*
+#search {
+  border: none;
+}
+*/
+
+.fa-code {
+  font-size: 19px;
+}
+
+.article.grid-right {
+  margin-left: 330px;
+}
+
+.toc ul{
+  font-size: 10px;
+}
+
+.toc .level1 > li {
+  font-size: 14px;
+}
+.toc .level2 {
+  font-size: 12px;
+}
+
+.sideaffix {
+  margin-left: -35px;
+}
+
+.sidetoc,
+.sidefilter {
+  width: 330px;
+}
+
+.sidenav,
+.toc-toggle {
+  padding: 0;
+}
+
+.sidetoggle {
+  padding-bottom: 15px;
+}
+
+/* Remove center align from Navbar and Collapsible section */
+.collapse.in,
+.collapsing {
+  text-align: unset;
+}
+
+article h4 {
+  border-bottom: none;
+}
+
+@media (min-width: 768px) {
+  .sidetoc, .sidefilter {
+    margin-left: -15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-collapse {
+    text-align: center !important;
+  }
+
+  .navbar-collapse li .active {
+    border-radius: 20px;
+  }
+}
+
+/* Collapsible Sections
+   ------------------------------------------------------- */
+.expander:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e260";
+    margin-left: 5px;
+    color: grey;
+    font-size: small;
+}
+
+.expander.collapsed:after {
+    content: "\e259";
+}
+
+/* Floating buttons
+   ------------------------------------------------------- */
+.fab {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 11px 0 0;
+    border: none;
+    outline: none;
+    color: #FFF;
+    border-radius: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition:.3s;
+}
+
+.fab:hover {
+    transform: scale(1.1);
+}
+
+.fab + .fab {
+  margin-right: 15px;
+}
+
+.contribution-panel {
+    z-index: 1000;
+    position: fixed;
+    right: 30px;
+    top: 70px;
+}
+
+/* Bootstrap docs like sidebar
+   ------------------------------------------------------- */
+.affix h5 {
+  display: none;
+}
+
+/* active & hover links */
+.affix ul > li > a:hover,
+.affix ul > li.active > a,
+.affix ul > li > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* all active links */
+.affix ul > li.active > a,
+.affix ul > li.active:hover > a,
+.affix ul > li.active:focus >a {
+    font-weight: 700;
+}
+
+/* nested active links */
+.affix ul ul > li.active > a,
+.affix ul ul > li.active:hover > a,
+.affix ul ul > li.active:focus > a {
+    font-weight: 500;
+}
+
+/* all links */
+.affix ul > li > a {
+  color: #999;
+  border-left: 2px solid transparent;
+  padding: 4px 20px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* nested links */
+.affix ul ul > li > a {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 30px;
+  font-size: 12px;
+}
+
+/* hide inactive nested list */
+.affix ul ul {
+  display: none;
+}
+
+/* show active nested list */
+.affix ul > li.active > ul {
+  display: block;
+}
+
+.affix > ul > li > a:before {
+  content: '';
+}
+
+.affix ul ul > li > a:before {
+  content: '';
+}
+
+/* Navbar Hamburger
+   ------------------------------------------------------- */
+.icon-bar {
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .icon-bar:nth-of-type(2) {
+    transform: rotate(-45deg) translate(-4px, 5px) ;
+}
+
+/* Fade out the second bar */
+.change .icon-bar:nth-of-type(3) {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .icon-bar:nth-of-type(4) {
+    transform: rotate(45deg) translate(-4px, -5px) ;
+}
